@@ -1,0 +1,42 @@
+#include "Pacman.h"
+
+Pacman::Pacman()
+{
+    //ctor
+    speed = 0.05;
+    rect = sf::RectangleShape({10,10});
+    rect.setPosition(sf::Vector2f(20,20));
+    rect.setFillColor(sf::Color::Red);
+    direction = {0,0};
+}
+
+Pacman::~Pacman()
+{
+    //dtor
+}
+
+void Pacman::update()
+{
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+    {
+
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+    {
+
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+    {
+
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+    {
+
+    }
+    rect.setPosition(rect.getPosition().x + speed, rect.getPosition().y + speed);
+}
+
+void Pacman::draw(sf::RenderWindow &window)
+{
+    window.draw(rect);
+}
